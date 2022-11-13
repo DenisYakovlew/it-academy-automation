@@ -19,4 +19,7 @@ describe('Number summation tests', () => {
     test('Adding five number float', () =>{
         expect(calc.add(0.0001, 1, 0.0002, 1.0001, -2.0002)).toBe(0.0002);
     })
+    test('Adding incorrect type data', () =>{
+        expect(calc.add(1, '23')).toBe('Error Message!');
+    })
 })
