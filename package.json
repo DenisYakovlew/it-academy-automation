@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "mocha": "^10.1.0",
+    "selenium-webdriver": "^4.6.1"
+  },
+  "name": "it-academy-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenisYakovlew/it-academy-automation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenisYakovlew/it-academy-automation/issues"
+  },
+  "homepage": "https://github.com/DenisYakovlew/it-academy-automation#readme",
+  "description": ""
+}
