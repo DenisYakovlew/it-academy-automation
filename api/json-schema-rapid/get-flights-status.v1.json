@@ -1,0 +1,260 @@
+    {
+      "type": "object",
+      "properties": {
+        "greatCircleDistance": {
+          "type": "object",
+          "properties": {
+            "meter": {
+              "type": "number"
+            },
+            "km": {
+              "type": "number"
+            },
+            "mile": {
+              "type": "number"
+            },
+            "nm": {
+              "type": "number"
+            },
+            "feet": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "meter",
+            "km",
+            "mile",
+            "nm",
+            "feet"
+          ]
+        },
+        "departure": {
+          "type": "object",
+          "properties": {
+            "airport": {
+              "type": "object",
+              "properties": {
+                "icao": {
+                  "type": "string"
+                },
+                "iata": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "shortName": {
+                  "type": "string"
+                },
+                "municipalityName": {
+                  "type": "string"
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "lat": {
+                      "type": "number"
+                    },
+                    "lon": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "lat",
+                    "lon"
+                  ]
+                },
+                "countryCode": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "icao",
+                "iata",
+                "name",
+                "shortName",
+                "municipalityName",
+                "location",
+                "countryCode"
+              ]
+            },
+            "scheduledTimeLocal": {
+              "type": "string"
+            },
+            "actualTimeLocal": {
+              "type": "string"
+            },
+            "scheduledTimeUtc": {
+              "type": "string"
+            },
+            "actualTimeUtc": {
+              "type": "string"
+            },
+            "terminal": {
+              "type": "string"
+            },
+            "checkInDesk": {
+              "type": "string"
+            },
+            "gate": {
+              "type": "string"
+            },
+            "quality": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "required": [
+            "airport",
+            "scheduledTimeLocal",
+            "actualTimeLocal",
+            "scheduledTimeUtc",
+            "actualTimeUtc",
+            "terminal",
+            "checkInDesk",
+            "gate",
+            "quality"
+          ]
+        },
+        "arrival": {
+          "type": "object",
+          "properties": {
+            "airport": {
+              "type": "object",
+              "properties": {
+                "icao": {
+                  "type": "string"
+                },
+                "iata": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "shortName": {
+                  "type": "string"
+                },
+                "municipalityName": {
+                  "type": "string"
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "lat": {
+                      "type": "number"
+                    },
+                    "lon": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "lat",
+                    "lon"
+                  ]
+                },
+                "countryCode": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "icao",
+                "iata",
+                "name",
+                "shortName",
+                "municipalityName",
+                "location",
+                "countryCode"
+              ]
+            },
+            "scheduledTimeLocal": {
+              "type": "string"
+            },
+            "scheduledTimeUtc": {
+              "type": "string"
+            },
+            "terminal": {
+              "type": "string"
+            },
+            "quality": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "required": [
+            "airport",
+            "scheduledTimeLocal",
+            "scheduledTimeUtc",
+            "terminal",
+            "quality"
+          ]
+        },
+        "lastUpdatedUtc": {
+          "type": "string"
+        },
+        "number": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "codeshareStatus": {
+          "type": "string"
+        },
+        "isCargo": {
+          "type": "boolean"
+        },
+        "aircraft": {
+          "type": "object",
+          "properties": {
+            "reg": {
+              "type": "string"
+            },
+            "modeS": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "reg",
+            "modeS",
+            "model"
+          ]
+        },
+        "airline": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name"
+          ]
+        }
+      },
+      "required": [
+        "greatCircleDistance",
+        "departure",
+        "arrival",
+        "lastUpdatedUtc",
+        "number",
+        "status",
+        "codeshareStatus",
+        "isCargo",
+        "aircraft",
+        "airline"
+      ]
+    }
